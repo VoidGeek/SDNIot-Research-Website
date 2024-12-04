@@ -1,10 +1,5 @@
 import React from "react";
 
-export const metadata = {
-  title: "SDNIoT Dataset",
-  description: "Explore IoT security, malware detection, and intrusion analysis with the SDNIoT dataset.",
-};
-
 const SDNIoTDataset = async () => {
   // Static data for SSG
   const citation = `G. Suchetha, K. Pushpalatha, S. M. Sooraj, V. S. Naik, Tanishka, and T. U. Saniha,
@@ -61,7 +56,7 @@ const SDNIoTDataset = async () => {
                 href={doiLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
+                className="text-blue-500 hover:underline break-all"
               >
                 10.1109/ISCS61804.2024.10581240
               </a>
