@@ -1,6 +1,16 @@
 import React from "react";
 
 const SDNIoTDataset: React.FC = () => {
+  // Static content
+  const citation = `G. Suchetha, K. Pushpalatha, S. M. Sooraj, V. S. Naik, Tanishka, and T. U. Saniha,
+    "Enhancing Machine Learning Model Accuracy through Novel SDNIoT Dataset Generation,"
+    2024 International Conference on Intelligent Systems for Cybersecurity (ISCS), Gurugram, India, 2024, pp. 01-06,
+    doi: 10.1109/ISCS61804.2024.10581240.`;
+
+  const datasetLink = "https://github.com/Suchetha9/Dataset/tree/main";
+  const repositoryLink =
+    "https://github.com/Suchetha9/Dataset/tree/main?tab=readme-ov-file";
+
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       {/* Header */}
@@ -10,7 +20,7 @@ const SDNIoTDataset: React.FC = () => {
           <p className="mt-2 text-gray-600">
             Faculty:{" "}
             <a
-              href="https://github.com/Suchetha9/Dataset/tree/main"
+              href={repositoryLink}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline"
@@ -39,25 +49,7 @@ const SDNIoTDataset: React.FC = () => {
           {/* Citation */}
           <section className="bg-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg">
             <h3 className="text-lg font-bold text-gray-800">Citation:</h3>
-            <p className="mt-2 text-gray-700">
-              G. Suchetha, K. Pushpalatha, S. M. Sooraj, V. S. Naik, Tanishka,
-              and T. U. Saniha,{" "}
-              <span className="italic">
-                &quot;Enhancing Machine Learning Model Accuracy through Novel
-                SDNIoT Dataset Generation,&quot;
-              </span>{" "}
-              2024 International Conference on Intelligent Systems for
-              Cybersecurity (ISCS), Gurugram, India, 2024, pp. 01-06, doi:{" "}
-              <a
-                href="https://doi.org/10.1109/ISCS61804.2024.10581240"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
-              >
-                10.1109/ISCS61804.2024.10581240
-              </a>
-              .
-            </p>
+            <p className="mt-2 text-gray-700">{citation}</p>
           </section>
 
           {/* Repository Link */}
@@ -65,7 +57,7 @@ const SDNIoTDataset: React.FC = () => {
             <p className="text-gray-700">
               The dataset is available for download at:{" "}
               <a
-                href="https://github.com/Suchetha9/Dataset/tree/main"
+                href={datasetLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:underline"
